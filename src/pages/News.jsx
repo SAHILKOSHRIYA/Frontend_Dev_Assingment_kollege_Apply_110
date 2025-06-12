@@ -45,6 +45,12 @@ const News = () => {
         Trending News Highlights
       </h1>
 
+      {status === "loading" && (
+  <p className="text-gray-500 text-center animate-pulse mb-8 text-lg">
+    🔄 Fetching latest news...
+  </p>
+)}
+
       <div className="grid md:grid-cols-4 gap-4 bg-white p-4 rounded-2xl shadow border mb-10">
         <input
           type="text"
@@ -74,7 +80,8 @@ const News = () => {
         />
       </div>
 
-      {status === "loading" && (
+      {
+        status === "loading" && (
         <p className="text-gray-500 animate-pulse text-center">
           Loading news...
         </p>

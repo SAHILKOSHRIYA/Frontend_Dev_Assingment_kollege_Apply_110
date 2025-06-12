@@ -196,7 +196,7 @@ export default function Dashboard() {
         >
           {theme === "light" ? "🌙 Dark" : "☀️ Light"}
         </button>
-        ;{" "}
+        {" "}
         <button
           onClick={handleLogout}
           className="w-full bg-rose-500 hover:bg-rose-600 py-2 rounded-xl text-white font-semibold shadow-md transition-all mt-4"
