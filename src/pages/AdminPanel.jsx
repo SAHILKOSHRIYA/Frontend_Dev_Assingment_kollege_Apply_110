@@ -94,7 +94,7 @@ const AdminPanel = () => {
       >
         {theme === "light" ? "🌙 Dark" : "☀️ Light"}
       </button>
-      ;
+      
       <button
         onClick={handleLogout}
         className="flex items-center justify-center gap-2 px-4 py-2 bg-rose-500 hover:bg-rose-600 text-white rounded-lg transition-all mt-4 w-full"
