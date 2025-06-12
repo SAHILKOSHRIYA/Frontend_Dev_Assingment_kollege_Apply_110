@@ -26,7 +26,9 @@ Use the following default credentials to log in as the admin:
 - **Password:** `admin123`
 
 Once logged in, the admin has full access to all features, including setting payout rates, exporting data, and managing visual analytics.
-**Note -If Eneter your Gmail option not visible click the bar first **
+
+
+IMP_Note -If Eneter your Gmail option not visible click the bar first 
 
 ---
 
