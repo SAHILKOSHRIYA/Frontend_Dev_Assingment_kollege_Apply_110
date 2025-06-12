@@ -36,5 +36,5 @@ export const fetchNews = async () => {
     throw error;
   }
 };
-
+//resolving problem
 
