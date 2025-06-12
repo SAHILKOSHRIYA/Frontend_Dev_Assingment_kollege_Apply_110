@@ -45,7 +45,8 @@ const News = () => {
         Trending News Highlights
       </h1>
 
-      {status === "loading" && (
+      {
+      status === "loading" && (
   <p className="text-gray-500 text-center animate-pulse mb-8 text-lg">
     🔄 Fetching latest news...
   </p>
