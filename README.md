@@ -1,3 +1,62 @@
+# 📰 News Payout Dashboard
+
+The **News Payout Dashboard** is a responsive web application built with **React.js**, **Redux**, and **Firebase**, designed for content managers and administrators to manage, track, and calculate payouts for articles and blog submissions efficiently.
+
+---
+
+## 📌 Features
+
+- 🔐 **Authentication** with Firebase (Email/Password)
+- 🧑‍💼 **Admin Login** and Role-Based Access
+- 🧾 **Payout Calculation** based on article/blog count
+- 📊 **Data Visualizations** using Recharts
+- 📥 **Export Options**: Download as CSV, PNG, or export to Google Sheets
+- 🌙 **Light/Dark Mode Toggle**
+- 🔍 **Search and Filters**: Filter by author, type, date, and keyword
+- 📱 **Fully Responsive UI** optimized for all devices
+- 🔔 **Real-Time Notifications** with React Hot Toast
+
+---
+
+## 🔐 Admin Credentials
+
+Use the following default credentials to log in as the admin:
+
+- **Email:** `admin@gmail.com`  
+- **Password:** `admin123`
+
+Once logged in, the admin has full access to all features, including setting payout rates, exporting data, and managing visual analytics.
+
+---
+
+## 👥 New User Behavior
+
+If a new user logs in with custom credentials:
+
+- ✅ Firebase Authentication verifies the user.
+- 🆕 If the user doesn't exist in the database, their information is automatically **added to Firebase** for future tracking.
+- 🔒 Role-based restrictions are applied (non-admin users may have limited or read-only access depending on your implementation).
+
+---
+
+## 🚀 Tech Stack
+
+| Tech         | Description                        |
+|--------------|------------------------------------|
+| React.js     | Frontend library                   |
+| Redux        | State management                   |
+| Firebase     | Authentication & User Database     |
+| Lucide React | Icon library                       |
+| Recharts     | Data visualization charts          |
+| Tailwind CSS | Utility-first CSS framework        |
+| Material UI  | UI Components                      |
+| React Hot Toast | Notification system            |
+
+---
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
