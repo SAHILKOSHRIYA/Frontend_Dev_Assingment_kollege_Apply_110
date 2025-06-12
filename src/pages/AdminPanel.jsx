@@ -88,7 +88,7 @@ const AdminPanel = () => {
           );
         })}
       </nav>
-      <div className=" mt-10 space-y-3">
+      <div className=" space-y-3">
   <button
     onClick={toggle}
     className="w-full bg-indigo-100 dark:bg-gray-700 hover:bg-indigo-200 dark:hover:bg-gray-600 py-2 rounded-xl text-indigo-600 dark:text-white font-semibold shadow-md transition-all"
@@ -100,7 +100,7 @@ const AdminPanel = () => {
     onClick={handleLogout}
     className="flex items-center justify-center gap-2 px-4 py-2 bg-rose-500 hover:bg-rose-600 text-white rounded-lg transition-all w-full"
   >
-    <LogOut size={18} />
+    <LogOut size={19} />
     Logout
   </button>
 </div>
