@@ -64,7 +64,8 @@ export default function Dashboard() {
   useEffect(() => {
     if (articles.length > 0) {
       const authorCounts = {};
-      const typeCounts = { News: 0, Blog: 32 };
+     const typeCounts = { News: 0, Blog: blogArticles.length || 0 };
+
       articles.forEach((item) => {
         const author = item.creator?.[0] || "Unknown";
         authorCounts[author] = (authorCounts[author] || 0) + 1;
@@ -220,6 +221,12 @@ export default function Dashboard() {
                 Here's your news overview and analytics.
               </p>
             </header>
+            {/*  */}
+            {isMainDashboard && articles.length === 0 && (
+              <p className="text-center text-gray-500 mb-6">
+                No news articles available at the moment.
+              </p>
+)}
 
             {/* Cards */}
             <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10 animate-fade-in-up">
@@ -321,6 +328,7 @@ export default function Dashboard() {
                   <h3 className="text-lg font-semibold text-gray-700 mb-4">
                     Articles by Author
                   </h3>
+                  {authorData.length > 0 ? (
                   <ResponsiveContainer width="100%" height={250}>
                     <PieChart>
                       <Pie
@@ -343,6 +351,11 @@ export default function Dashboard() {
                       <Tooltip />
                     </PieChart>
                   </ResponsiveContainer>
+                  ) : (
+  <p className="text-center text-gray-400">
+    No author data available.
+  </p>
+)}
                 </div>
 
                 <div className="bg-white rounded-xl p-6 shadow-lg">
