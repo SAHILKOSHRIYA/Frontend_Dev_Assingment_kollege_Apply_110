@@ -14,7 +14,7 @@ const News = () => {
   const [filtered, setFiltered] = useState([]);
 
   useEffect(() => {
-    // dispatch(fetchNewsData());
+    dispatch(fetchNewsData());
   }, [dispatch]);
 
   useEffect(() => {
