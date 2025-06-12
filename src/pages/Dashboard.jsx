@@ -126,7 +126,7 @@ export default function Dashboard() {
         </button>
       </div>
 
-      {/* <aside
+      <aside
         style={{
           backgroundColor: "var(--bg-card)",
           borderColor: "var(--border-color)",
@@ -196,47 +196,14 @@ export default function Dashboard() {
         >
           {theme === "light" ? "🌙 Dark" : "☀️ Light"}
         </button>
-        {" "}
+        
         <button
           onClick={handleLogout}
           className="w-full bg-rose-500 hover:bg-rose-600 py-2 rounded-xl text-white font-semibold shadow-md transition-all mt-4"
         >
           Logout
         </button>
-      </aside> */}
-      <aside
-  style={{
-    backgroundColor: "var(--bg-card)",
-    borderColor: "var(--border-color)",
-  }}
-  className={`fixed md:static top-0 left-0 h-full md:h-screen w-64 border-r shadow-lg z-40 transform ${
-    isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-  } transition-transform duration-300 ease-in-out md:translate-x-0 p-4 flex flex-col justify-between`}
->
-  <div>
-    {/* Top content: avatar, nav */}
-    <h2 className="text-3xl font-bold tracking-wide text-indigo-600 mt-14">Dashboard</h2>
-    <section className="...">{/* Avatar and user info */}</section>
-    <nav className="...">{/* Nav links */}</nav>
-  </div>
-
-  {/* Bottom fixed buttons */}
-  <div className="space-y-2 mt-4">
-    <button
-      onClick={toggle}
-      className="w-full bg-indigo-100 dark:bg-gray-700 hover:bg-indigo-200 dark:hover:bg-gray-600 py-2 rounded-xl text-indigo-600 dark:text-white font-semibold shadow-md transition-all"
-    >
-      {theme === "light" ? "🌙 Dark" : "☀️ Light"}
-    </button>
-    <button
-      onClick={handleLogout}
-      className="w-full bg-rose-500 hover:bg-rose-600 py-2 rounded-xl text-white font-semibold shadow-md transition-all"
-    >
-      Logout
-    </button>
-  </div>
-</aside>
-
+      </aside>
 
       {/* content */}
       <main className="flex-1 p-6 md:p-8 overflow-y-auto h-full">
