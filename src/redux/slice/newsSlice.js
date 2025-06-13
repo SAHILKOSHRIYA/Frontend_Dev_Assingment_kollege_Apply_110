@@ -67,7 +67,7 @@ const newsSlice = createSlice({
       })
       .addCase(fetchNewsData.fulfilled, (state, action) => {
         state.status = "succeeded";
-        state.articles = action.payload;
+        state.articles = action.payload.articles;
       })
       .addCase(fetchNewsData.rejected, (state, action) => {
         state.status = "failed";
