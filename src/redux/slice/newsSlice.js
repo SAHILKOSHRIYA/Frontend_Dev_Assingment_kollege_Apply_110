@@ -37,7 +37,7 @@
 // //     throw error; // Propagate the error to the rejected case
 // //   }
 // // });
-
+//}
 // // export default newsSlice.reducer;
 // newsSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
