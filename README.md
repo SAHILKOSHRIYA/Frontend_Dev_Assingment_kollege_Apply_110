@@ -1,9 +1,9 @@
-# PayPress X0-2📰 News Payout Dashboard
+# PayPress X0-2📰 News Payout Dashboard 
 
 The **News Payout Dashboard** is a responsive web application built with **React.js**, **Redux**, and **Firebase**, designed for content managers and administrators to manage, track, and calculate payouts for articles and blog submissions efficiently.
 
 ---
-
+**contact** 9131198505
 ## 📌 Features
 
 - 🔐 **Authentication** with Firebase (Email/Password)
@@ -22,8 +22,8 @@ The **News Payout Dashboard** is a responsive web application built with **React
 
 Use the following default credentials to log in as the admin:
 
-- **Email:** `admin@gmail.com`  
-- **Password:** `admin123`
+- **Email:** `private`  
+- **Password:** `private`
 
 Once logged in, the admin has full access to all features, including setting payout rates, exporting data, and managing visual analytics.
 
