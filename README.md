@@ -1,4 +1,4 @@
-# PayPress X0-2📰 News Payout Dashboard 
+# PayPress X0-2📰 News/Blog Payout Dashboard 
 
 The **News Payout Dashboard** is a responsive web application built with **React.js**, **Redux**, and **Firebase**, designed for content managers and administrators to manage, track, and calculate payouts for articles and blog submissions efficiently.
 
